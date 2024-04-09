@@ -11,16 +11,15 @@
 <br/>
 
 <p align="center">
-  <img src="https://github.com/crystalcheong/shelvd/assets/65748007/fb390f98-4a13-49cc-8aff-d8db83cd7480" alt="Project Cover"
+  <img src="https://github.com/crystalcheong/shelvd/assets/65748007/2aa02cac-4b44-477f-a99f-23d415d5dd0d" alt="Project Cover"
     width="960px"
   />
 </p>
 <p align="center">
-  <img src="https://github.com/crystalcheong/shelvd/assets/65748007/9337855c-e8c5-4c73-b9f7-c24a018b2fb3" alt="Project Cover"
+  <img src="https://github.com/crystalcheong/shelvd/assets/65748007/c0d65db7-4913-4cef-97fc-3698a6f560cd" alt="Project Cover"
     width="960px"
   />
 </p>
-
 
 ---
 
@@ -38,10 +37,11 @@
   ```
 
 > [!IMPORTANT]
-> Required environment variables 
+> Required environment variables
+>
 > - Duplicate `.env.example` to create `*.env` files
->    - `.env` — The default file used to store your dev, production, and test variables
->    - `.env.local` — Overrides all environment files except the test file (including the default .env file)
+>   - `.env` — The default file used to store your dev, production, and test variables
+>   - `.env.local` — Overrides all environment files except the test file (including the default .env file)
 
 - Starting the server
   The server will start at `http://localhost:3000` by default
@@ -62,7 +62,6 @@
   <img alt="Github Actions" src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" height="25"/>
   <img alt="Vercel" src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" height="25"/>
   <img alt="Supbase" src="https://img.shields.io/badge/Supabase-181818?style=for-the-badge&logo=supabase&logoColor=white" height="25"/>
-
 
 ---
 
