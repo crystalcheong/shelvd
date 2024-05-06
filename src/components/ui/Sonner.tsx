@@ -4,8 +4,8 @@ import {
   CheckCircledIcon,
   CrossCircledIcon,
   DotsHorizontalIcon,
+  ExclamationTriangleIcon,
   InfoCircledIcon,
-  QuestionMarkCircledIcon,
 } from '@radix-ui/react-icons'
 import { Toaster as Sonner } from 'sonner'
 
@@ -21,7 +21,7 @@ const Toaster = ({ ...props }: ToasterProps) => {
       icons={{
         success: <CheckCircledIcon className="size-4" />,
         info: <InfoCircledIcon className="size-4" />,
-        warning: <QuestionMarkCircledIcon className="size-4" />,
+        warning: <ExclamationTriangleIcon className="size-4" />,
         error: <CrossCircledIcon className="size-4" />,
         loading: <DotsHorizontalIcon className="size-4" />,
       }}

@@ -1,5 +1,6 @@
 import { AppThemeMode } from '@/data/static/app'
 import { StoreSlicePrefix } from '@/data/static/store'
+import { env } from '@/env'
 import { createAsyncSlice } from '@/utils/store'
 import { PayloadAction } from '@reduxjs/toolkit'
 import { z } from 'zod'
@@ -7,6 +8,7 @@ import { z } from 'zod'
 const AppState = z.object({
   navDrawerVisibility: z.boolean().default(false),
   searchCommandVisibility: z.boolean().default(false),
+  serverMaintainanceVisibility: z.boolean().default(env.VITE_SERVER_FLAG),
   themeMode: AppThemeMode,
 })
 type AppState = z.infer<typeof AppState>
@@ -14,6 +16,7 @@ type AppState = z.infer<typeof AppState>
 const DefaultAppState: AppState = {
   navDrawerVisibility: false,
   searchCommandVisibility: false,
+  serverMaintainanceVisibility: true,
   themeMode: AppThemeMode.enum.dark,
 }
 
@@ -29,6 +32,11 @@ export const AppSlice = createAsyncSlice({
     setNavDrawerVisibility: create.reducer(
       (state, action: PayloadAction<boolean>) => {
         state.navDrawerVisibility = action.payload
+      },
+    ),
+    setServerMaintainanceVisibility: create.reducer(
+      (state, action: PayloadAction<boolean>) => {
+        state.serverMaintainanceVisibility = action.payload
       },
     ),
     setThemeMode: create.reducer(

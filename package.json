@@ -4,6 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "description": "letterboxd for books",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crystalcheong/shelvd.git"
+  },
   "scripts": {
     "start:dev": "vite",
     "start:server": "json-server db.json",

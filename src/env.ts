@@ -11,6 +11,10 @@ export const env = createEnv({
       .string()
       /** @external https://env.t3.gg/docs/recipes#booleans */
       .transform((s) => s !== 'false' && s !== '0'),
+    VITE_SERVER_FLAG: z
+      .string()
+      /** @external https://env.t3.gg/docs/recipes#booleans */
+      .transform((s) => s !== 'false' && s !== '0'),
 
     //#endregion  //*======== EXPERIMENTAL FLAGS ===========
     VITE_FEATURE_LIST_SLUG: z

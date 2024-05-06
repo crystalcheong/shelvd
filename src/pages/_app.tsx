@@ -9,7 +9,10 @@ const AppLayout = ({ seo }: { seo?: SEO }) => {
   return (
     <RenderGuard>
       <SEO {...seo} />
-      <Toaster />
+      <Toaster
+        richColors
+        visibleToasts={1}
+      />
       <Search>
         <Nav />
         <Outlet />

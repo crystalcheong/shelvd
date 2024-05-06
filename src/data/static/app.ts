@@ -6,6 +6,7 @@ export const AppName = AppPackage.name
 export const DebugPrefix = `@${AppName.toUpperCase()}`
 export const AppVersion = AppPackage.version
 export const AppDescription = AppPackage.description
+export const AppRepository = AppPackage.repository.url
 export const AppBaseUrl = (
   options: {
     isAbsolute?: boolean
